@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо Ольги</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-direction: row-reverse;
+        }
+        .profile img {
+            width: 300px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile h1 {
+            margin: 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section#practical-works h2 {
+            background-color: #e0e0ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .section#lab-works h2 {
+            background-color: #f0e0ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #practical-works {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        #lab-works {
+            background-color: #f8f0ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .cards#practical-cards .card {
+            background-color: #e0e0ff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 45%;
+        }
+        .cards#lab-cards .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 45%;
+        }
+        .card a {
+            color: blue;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Про мене</a>
+            <a href="#practical-works">Практичні роботи</a>
+            <a href="#lab-works">Лабораторні роботи</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <img src="IMG_E0673.JPG" alt="Фото Ольги">
+            <div>
+                <h1>Привіт, я Ольга!</h1>
+                <p>Я студентка Національного університету "Києво-Могилянська академія", вивчаю право.</p>
+                <a href="DUBH7790.JPG" class="btn" download>Завантажити резюме</a>
+            </div>
+        </div>
+
+        <div class="section" id="practical-works">
+            <h2>Практичні роботи</h2>
+            <div class="cards" id="practical-cards">
+                <div class="card">
+                    <h3>Практична робота №1</h3>
+                    <a href="https://vshkole.com/9-klass/reshebniki/geografiya/og-stadnik-2017-zoshit-dlya-praktichnih-robit/praktichni-roboti/praktichna-robota-3-viznachennya-zernovih-i-tehnichnih-kultur/st8vpr2" target="_blank">Посилання</a>
+                </div>
+                <div class="card">
+                    <h3>Практична робота №2</h3>
+                    <a href="https://www.figma.com/proto/f9mGCuwksW3o0zNSK1K1tY/Untitled?node-id=3-68&p=f&t=HZ5c9YIta1km6GHv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">Посилання</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="lab-works">
+            <h2>Лабораторні роботи</h2>
+            <div class="cards" id="lab-cards">
+                <div class="card">
+                    <h3>Лабораторна робота №1</h3>
+                    <a href="https://moyaosvita.com.ua/osvita-2/chim-vidriznyayetsya-praktichna-robota-vid-laboratorno%d1%97/" target="_blank">Посилання</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy;2024 Худойкулова Ольга. Всі права захищені. Контакт: oland1300@gmail.com
+    </footer>
+</body>
+</html>
